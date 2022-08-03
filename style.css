@@ -1,0 +1,201 @@
+body {
+	background-color:#F1EADC !important;
+}
+.navegacao {
+	margin-top: 2%;
+}
+
+nav{
+	background-color: #20B2AA;
+}
+
+.navbar-brand {
+	color: 	#FFFFE0;
+	font-size: 15px !important;
+}
+
+.dropdown .btn {
+	border: solid 1px silver;
+	margin-left: 5px;
+	background-color: #20B2AA;
+	color: white;
+}
+
+.dropdown .dropdown-menu {
+	background-color: #F1EADC;
+}
+.linha {
+	width: 100%;
+	height: 5px;
+	background-color: #48D1CC;
+	margin-bottom: 60px;
+}
+
+.padrao {
+	border: solid 1px silver;
+	background-color: #20B2AA;
+	border-radius: 3px;
+	margin-left: 5px;
+	font-weight: 500;
+}
+ a {
+	color: white !important;
+	text-decoration: none !important;
+}
+img {
+	width: 70px;
+	float: left;
+	margin-left: 10px;
+	position: absolute;
+	animation-name: image;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes image{
+	0%{
+		margin-left: -400px;
+		transform: rotate(45deg);
+	}
+	5%{
+		margin-left: 20px;
+		transform: rotate(360deg);
+	}
+	100%{
+		margin-left: 20px;
+		transform: rotate(360deg);
+	}
+}
+
+.graficBody {
+	width: 65%;
+	margin-top:6%;
+	margin-left:2%;
+	display: inline-block;
+}
+
+.graficBody h6{
+	color: #2F4F4F;
+	text-align: center;
+}
+
+.graficBody p {
+	font-size: 20px;
+	color: #2F4F4F;
+	transform: rotate(270deg);
+	position: absolute;
+	margin-left: -70px;
+	margin-top: 180px !important;
+}
+
+.graficBody h4 {
+	width: 100%;
+	text-align: center;
+	font-size: 14px !important;
+	color: #2F4F4F;
+	text-align: center;
+	margin-top: 440px;
+}
+
+.graficBody .eixo {
+	width: 100%;
+	float: left;
+}
+
+.graficBody .eixo .eixox{
+	width: 70px;
+	float: left;
+	margin-left: 55px;
+	color: #2F4F4F;
+	font-weight: 600;
+	font-size: 12px;
+}
+
+#grafics {
+	border: solid 1px #48D1CC;
+	width: 100%;
+	height: 400px;
+	text-align: center;
+	float: left;
+}
+
+.grafic .coluna {
+	width: 13%;
+	height: 100%;
+	float: left;
+	margin-left: 20px;
+	position: relative;
+}
+
+.grafic .barra {
+	width: 80%;
+	background-color: #48D1CC;
+	margin-left: 10%;
+	position: absolute;
+	bottom: 0px;
+}
+
+.grafic .f {
+	font-size: 20px;
+	color: #2F4F4F;
+	position: absolute;
+	width: 100%;
+}
+
+.grafic .p {
+	width: 100%;
+	font-size: 17px;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+
+
+.descricao{
+	width: 30%;
+	height: 250px;
+	float: right;
+	margin-top: 8%;
+}
+
+.descricao .fechar {
+	border: solid 1px white;
+	background-color: tomato;
+	color: white;
+}
+
+.descricao p{
+	color: grey;
+	font-size: 15px;
+	margin-top: 12px;
+}
+
+ul li {
+	margin: 0;
+	padding: 0;
+	height: 25px;
+	cursor: pointer;
+}
+
+.cor {
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-top: 8px;
+	border: solid 1px silver;
+}
+
+
+ /*Tabelas*/
+.tabelaFrequencia {
+	width: 45%;
+	margin-left: 2%;
+	margin-top: 9%;
+	float: left;
+}
+
+.tabelaFrequencia th {
+	color: grey;
+}
+

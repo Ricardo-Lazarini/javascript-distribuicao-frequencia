@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="scripts.js" defer></script>
+
+    <title>Frequencia</title>
+  </head>
+  <body>
+
+   <div class="container">
+
+	<div class="navegacao">
+		<nav class="navbar navbar-expand-lg ">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="#">Distribuição de frequencia com classe</a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+		      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		      <div class="navbar-nav">
+		        <div class="dropdown">
+						  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+						    Alterar cor de fundo do grafico
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						    <li onclick="Wheat(this)"><div class="cor" style="background-color: #F5DEB3;"></div> &nbsp Wheat</li>
+						    <li onclick="LightPink(this)"><div class="cor" style="background-color: #FFB6C1;"></div> &nbsp LightPink</li>
+						    <li onclick="LightCoral(this)"><div class="cor" style="background-color:#F08080;"></div> &nbsp LightCoral</li>
+						    <li onclick="Salmon(this)"><div class="cor" style="background-color: #FA8072;"></div> &nbsp Salmon</li>
+						    <li onclick="White(this)"><div class="cor" style="background-color: white;"></div> &nbsp Branco</li>
+						    <li onclick="Black(this)"><div class="cor" style="background-color: #000000;"></div> &nbsp Black</li>
+						    <li onclick="Original(this)"><div class="cor" style="background-color: #F1EADC;"></div> &nbsp Original</li>
+						  </ul>
+						</div>
+
+						<div class="dropdown">
+							  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+							    Alterar cor das fontes
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+							    <li onclick="Teal(this)"><div class="cor" style="background-color: #008080;"></div> &nbsp Teal</li>
+							    <li onclick="Dark(this)"><div class="cor" style="background-color: #000000;"></div> &nbsp Preto</li>
+							    <li onclick="DarkSeaGreen(this)"><div class="cor" style="background-color:	#8FBC8F;"></div> &nbsp DarkSeaGreen</li>
+							    <li onclick="Snow(this)"><div class="cor" style="background-color: #FFFAFA;"></div> &nbsp Snow</li>
+							  </ul>
+							</div>
+
+							<div class="dropdown">
+						  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+						    Alterar cor das barras
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						     <li onclick="Preto(this)"><div class="cor" style="background-color: black;"></div> &nbsp Preto</li>
+						    <li onclick="Branco(this)"><div class="cor" style="background-color: white;"></div> &nbsp Branco</li>
+						    <li onclick="Tomato(this)"><div class="cor" style="background-color:red;"></div> &nbsp Tomato</li> 
+						    <li onclick="Azul(this)"><div class="cor" style="background-color:#0080FF;"></div> &nbsp Azul</li>
+						    <li onclick="MediumTurquoise(this)"><div class="cor" style="background-color:	#48D1CC;"></div> &nbsp MediumTurquoise</li>
+						  </ul>
+						</div>
+
+						<div class="dropdown">
+						  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+						    Intensidade da linha
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						     <li onclick="Alta(this)"><div class="cor" style="background-color: #808080;"></div> &nbsp Alta</li>
+						     <li onclick="Media(this)"><div class="cor" style="background-color: #C0C0C0;"></div> &nbsp Media</li>
+						     <li onclick="Nenhuma(this)"><div class="cor" style="background-color: #F1EADC;"></div> &nbsp Nenhuma</li>
+						  </ul>
+						</div>
+
+						<button  class="padrao"><a href="index.html">Restaurar original</a></button>
+
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+	</div> <!-- fim da navegacao -->
+
+	<div class="linha"></div>
+
+	<div class="section">
+
+	  <img src="img/estatistica.png">
+
+	<div id="bodyGrafic" class="graficBody">
+			<h6>Gráfico da distribuição da massa.</h6>
+			<p>Quantidade</p>
+
+		<div id="grafics" class="grafic">
+				<div class="coluna">
+					<div id="f1" class="f"></div>
+					<div id="b1" class="barra"></div>
+					<div id="p1" class="p"></div>
+				</div>
+				<div class="coluna">
+					<div id="f2" class="f"></div>
+					<div id="b2" class="barra"></div>
+					<div id="p2" class="p"></div>
+				</div>
+				<div class="coluna">
+					<div id="f3" class="f"></div>
+					<div id="b3" class="barra"></div>
+					<div id="p3" class="p"></div>
+				</div>
+				<div class="coluna">
+					<div id="f4" class="f"></div>
+					<div id="b4"class="barra"></div>
+					<div id="p4" class="p"></div>
+				</div>
+				<div class="coluna">
+					<div id="f5" class="f"></div>
+					<div id="b5" class="barra"></div>
+					<div id="p5" class="p"></div>
+				</div>
+
+    </div>
+
+		<div class="eixo">
+			<div class="eixox">40 |-- 55</div>
+			<div class="eixox">55 |-- 70</div>
+			<div class="eixox">70 |-- 85</div>
+			<div class="eixox">85 |-- 100</div>
+			<div class="eixox">100 --|</div>
+		</div>
+
+		<h4>Classificacão das massas(pesos)</h4>
+
+	</div>
+			<div class="descricao">
+		  	<button onclick="saibaMais(this)" class="btn fechar">Click e saiba mais</button>
+		  	<p id="texto"></p>
+		  	<p onclick="fechar(this)" id="fechar" style="opacity: 0;color: tomato;cursor: pointer;">Fechar</p>
+		  </div>
+
+</div> <!-- fim da section -->
+
+
+<div class="tabelas">
+<div class="tabelaFrequencia">
+	<table class="table table-success table-striped">
+   <thead>
+    <tr>
+      <th scope="col">Massa</th>
+      <th scope="col">F</th>
+      <th scope="col">Fr</th>
+      <th scope="col">Fa</th>
+      <th scope="col">Fra</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="massa"></td>
+      <td id="f"></td>
+      <td id="fr"></td>
+      <td id="fa"></td>
+      <td id="fra"></td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+</div>
+
+</div> <!-- Fim do container -->
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
