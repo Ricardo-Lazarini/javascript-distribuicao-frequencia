@@ -190,13 +190,13 @@ function Teal(elemento){
 function Dark(elemento){
 	for (var fs = 0; fs < 5; fs++){
 	var cf = 'f' + (fs + 1);
-	document.getElementById(cf).style.color = '	#000000'
+	document.getElementById(cf).style.color = '#000000'
 	}	
 }
 function DarkSeaGreen(elemento){
 	for (var fs = 0; fs < 5; fs++){
 	var cf = 'f' + (fs + 1);
-	document.getElementById(cf).style.color = '	#8FBC8F'
+	document.getElementById(cf).style.color = '#8FBC8F'
 	}	
 }
 function Snow(elemento){
