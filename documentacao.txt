@@ -1,1 +1,23 @@
-A documentação será enviada em breve.
+03/08/2022:20:39
+
+A documentação completa será enviada em breve.
+
+Tecnologias usadas :
+- JAVASCRIPT
+- HTML
+- CSS
+- Bootstrap
+Este projeto faz a distribuição de frequencia de massa de um determinado numero de pessoas, usando JAVASCRIPT.
+Faz a contagem de quantas pessoas estão entre determinada faixa de peso e a porcentagem em relação ao total.
+Exibe essas informações em um html usando o DOM.
+Permite alterar cores do grafico como barra, fontes, backgrounds, adicionar e remover linhas, como alterar sua intensidade.
+Um botão lateral permite exibir e fechar um campo de texto com uma explicação sobre a tabela.
+A ultima tabela, permite visualizar a distribuição da frequencia, com os dados de :
+  - Frequencia ( F ).
+  - Frequencia relacional ( Fr ).
+  - Frequencia acumulada ( Fa ).
+  - Frequencia acumulada relacional ( Fra ).
+Pelo foco do projeto ser o aprendizado de javasacript, não foi seguido todas as regras para a criação correta da distribuição de frequencia.
+O html também não esta responsivo. Caso for utiliza lo em algum projeto, talvez seja necesssario pequenos ajustes.
+  
+Foi desenvolvido para o aprendizado e aprimoramento dos conhecimentos em javascript.
