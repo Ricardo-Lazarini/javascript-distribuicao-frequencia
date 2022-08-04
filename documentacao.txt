@@ -23,6 +23,8 @@ A ultima tabela, permite visualizar a distribuição da frequencia, com os dados
 Pelo foco do projeto ser o aprendizado de javasacript, não foi seguida todas as regras para a criação correta da
 distribuição de frequencia. Entre estas regras, está a ordenação da frequencia ( f ) na tabela de distribuição de 
 frequencia. Ordem que altera toda a maneira correta para ler e entender melhor este tipo de analise.
+As barras dos graficos são DIVs e seus tamanhos são gerados com relação à Fr.
+
 
 Observação:
 Por ser o primeiro projeto em javascript, talvez tenha muitas linhas de codigo. Com mais conhecimentos em estrutura 
